@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'example',
     'sample.apps.SampleConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -51,6 +52,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'example.urls'
+
+LOGIN_REDIRECT_URL = '/admin'
 
 TEMPLATES = [
     {
